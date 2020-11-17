@@ -15,6 +15,7 @@ puts 'Creating restaurants'
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address, #=> "282 Kevin Brook"
     rating: rand(1..5)
+    chef_name: Faker::Name.name,
     )
   puts "restaurant #{restaurant.id} is created"
 
